@@ -15,7 +15,7 @@ group :development, :test do
   gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
   gem 'guard-rspec', '2.5.0'
-  gem 'spork-rails', github: 'sporkrb/spork-rails'
+  gem 'spork-rails', git: 'https://github.com/sporkrb/spork-rails.git'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
 end
@@ -25,7 +25,7 @@ group :test do
   gem 'capybara', '2.1.0'
   gem 'factory_girl_rails', '4.2.0'
   gem 'cucumber-rails', '1.3.0', :require => false
-  gem 'database_cleaner', github: 'bmabey/database_cleaner'
+  gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
 
   # Uncomment this line on OS X.
   gem 'growl', '1.0.3'
@@ -50,6 +50,5 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
